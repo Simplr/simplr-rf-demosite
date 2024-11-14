@@ -21,11 +21,11 @@ const posts = await getCollection('blog').then((posts) =>
       <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
         Recent Blogposts
       </h2>
-      <div class='hidden md:block'>
+      <div id='recent-blogs-button' class='hidden md:block'>
         <Button href='/blog/'>Go to blog &rarr;</Button>
       </div>
-      <div class='block md:hidden'>
-        <Button id='recent-blogs-link' href='/blog/'>to blog</Button>
+      <div id='recent-blogs-mobile-button' class='block md:hidden'>
+        <Button href='/blog/'>to blog</Button>
       </div>
     </div>
     <BlogList posts={posts} />
